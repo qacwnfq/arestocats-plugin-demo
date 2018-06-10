@@ -13,7 +13,7 @@ pipeline {
     }
     post {
         always {
-            arestocats "resultsDatafilesPattern: *.csv" "metricsDatafilesPattern: *.json" "numBuilds: 15"
+            arestocats resultsDatafilesPattern: "*.csv", metricsDatafilesPattern: "*.json", numBuilds: 15
         }
     }
 }
